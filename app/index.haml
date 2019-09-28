@@ -1,0 +1,251 @@
+!!!
+%html{lang: "en"}
+  %head
+    %meta{charset: "UTF-8"}/
+    %meta{content: "width=device-width, initial-scale=1.0", name:"viewport"}/
+    %title Recutex
+    %link{rel: "stylesheet", href:"assets/css/bootstrap.min.css"}/
+    %link{rel: "stylesheet", href:"assets/css/main.css"}/
+    %link{rel: "stylesheet", href:"assets/css/slick.css"}/
+    %link{rel: "stylesheet", href:"assets/css/slick-theme.css"}/
+    %link{rel: "stylesheet", href:"assets/fonts/flaticon.css"}/
+    %link{rel: "stylesheet", href:"assets/css/animation.css"}/
+    %link{rel: "stylesheet", href:"assets/css/animate.css"}/
+    %link{rel: "stylesheet", href:"assets/css/font-awesome.css"}/
+  %body
+    %header#home
+      %nav.navbar.navbar-expand-lg.fixed-top.navbar-fixed-js
+        .nav-top__header
+          .nav-top__content.d-flex.pl-4.pr-4.justify-content-between
+            .main-nav__contact
+              %a.mr-3{ href: '#', :target=> "_blank" }
+                %i.fa.fa-phone 
+                %span 2 27723227
+              %a{ href: '#', :target=> "_blank" }
+                %i.fa.fa-envelope
+                %span ventas@recutex.cl
+            .main-nav__redes
+              %a{ href: '#', :target=> "_blank" }
+                %i.fa.fa-facebook 
+              %a{ href: '#', :target=> "_blank" }
+                %i.fa.fa-twitter
+              %a{ href: '#', :target=> "_blank" }
+                %i.fa.fa-linkedin
+        .content
+          .main-brand
+            %a.navbar-brand{:href => "#"}
+              Recutex
+              -# %img#iso{:src => "assets/img/logo-color.png"}/
+            %button.navbar-toggler.p-2.border-0.hamburger.hamburger--elastic.ml-autos{"data-toggle" => "offcanvas", :type => "button"}
+              %span.hamburger-box
+                %span.hamburger-inner
+          .navbar-collapse.offcanvas-collapse
+            %ul.navbar-nav.mr-autos
+              %li.nav-item.active
+                %a.nav-link.active{:href => "#home"} Camas
+              %li.nav-item
+                %a.nav-link{:href => "#services"} Futones
+              %li.nav-item
+                %a.nav-link{:href => "#about"} Comedores
+              %li.nav-item
+                %a.nav-link{:href => "#portfolio"} Camarotes
+              %li.nav-item
+                %a.nav-link{:href => "#team"} Gendarmeria / Sename
+          
+      
+    .main-banner
+      .main-banner__content
+        .main-banner__item
+          .mask
+            .main-banner__text
+              .main-banner__title
+                %p Todo lo mejor lo encontramos en recutex
+              .btn-box.btn-box__banner.float-right
+                %button.btn_custom.btn--medium.btn--filled
+                  Enviar
+              -# .main-banner__description
+              -#   %p Fuerza de ventas remota 360.
+          .main-banner__img
+            %img{ :src => "https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"}/
+        .main-banner__item
+          .mask
+            .main-banner__text
+              -# .main-banner__title
+              -#   %p Elige el servicio que mejor se adapte a tus objetivos
+              -# .main-banner__description
+              -#   %p Generación de reuniones con prospectos de clientes.
+          .main-banner__img
+            %img{ :src => "https://images.unsplash.com/photo-1503174971373-b1f69850bded?ixlib=rb-1.2.1&auto=format&fit=crop&w=787&q=80"}/
+    %section.main-product
+      .container
+        .main-general__title
+          %p
+            Productos
+        .main-product__content
+          .main-product__item
+            .main-product__img
+              %img{ :src => "https://cdn.shopify.com/s/files/1/0015/9816/1008/collections/futon-05_large.jpg?v=1539113652"}/
+            .main-product__box
+              .main-product__title
+                %p Futones
+              .main-product__price
+                %p $200
+          .main-product__item
+            .main-product__img
+              %img{ :src => "https://cdn.shopify.com/s/files/1/0015/9816/1008/collections/sofa1-05_large.png?v=1539033095"}/
+            .main-product__box
+              .main-product__title
+                %p Sofas
+              .main-product__price
+                %p $200
+          .main-product__item
+            .main-product__img
+              %img{ :src => "https://cdn.shopify.com/s/files/1/0015/9816/1008/collections/mesaa-05_large.jpg?v=1539180688"}/
+            .main-product__box
+              .main-product__title
+                %p Comedores
+              .main-product__price
+                %p $200
+          .main-product__item
+            .main-product__img
+              %img{ :src => "https://cdn.shopify.com/s/files/1/0015/9816/1008/collections/colchon-05_large.jpg?v=1539114534"}/
+            .main-product__box
+              .main-product__title
+                %p Colchones
+              .main-product__price
+                %p $200
+          .main-product__item
+            .main-product__img
+              %img{ :src => "https://cdn.shopify.com/s/files/1/0015/9816/1008/collections/cama-05_large.png?v=1539033562"}/
+            .main-product__box
+              .main-product__title
+                %p Camas
+              .main-product__price
+                %p $200
+          .main-product__item
+            .main-product__img
+              %img{ :src => "https://cdn.shopify.com/s/files/1/0015/9816/1008/collections/litera-05_large.jpg?v=1539110790"}/
+            .main-product__box
+              .main-product__title
+                %p Camarotes
+              .main-product__price
+                %p $200
+          .main-product__item
+            .main-product__img
+              %img{ :src => "https://cdn.shopify.com/s/files/1/0015/9816/1008/collections/pouf-05_eee3acb4-4880-4029-b367-54c8488416a4_large.jpg?v=1539114046"}/
+            .main-product__box
+              .main-product__title
+                %p Poufs
+              .main-product__price
+                %p $200
+          .main-product__item
+            .main-product__img
+              %img{ :src => "https://cdn.shopify.com/s/files/1/0015/9816/1008/collections/futon-05_large.jpg?v=1539113652"}/
+            .main-product__box
+              .main-product__title
+                %p Futones
+              .main-product__price
+                %p $200
+    %section.main-about
+      .container
+        .main-general__title
+          %p
+            Quiénes somos
+        .main-about__content
+          .main-about__item
+            .main-about__img
+              %img{ :src => "https://cdn.shopify.com/s/files/1/0015/9816/1008/collections/futon-05_large.jpg?v=1539113652"}/
+          .main-about__item
+            .main-about__box
+              %ul#pills-tab.nav.nav-pills.mb-3{:role => "tablist"}
+                %li.nav-item
+                  %a#pills-home-tab.nav-link.active{"aria-controls" => "pills-home", "aria-selected" => "true", "data-toggle" => "pill", :href => "#pills-home", :role => "tab"} Historia
+                %li.nav-item
+                  %a#pills-profile-tab.nav-link{"aria-controls" => "pills-profile", "aria-selected" => "false", "data-toggle" => "pill", :href => "#pills-profile", :role => "tab"} Misión / Visión
+                %li.nav-item
+                  %a#pills-contact-tab.nav-link{"aria-controls" => "pills-contact", "aria-selected" => "false", "data-toggle" => "pill", :href => "#pills-contact", :role => "tab"} Valores
+              #pills-tabContent.tab-content
+                #pills-home.tab-pane.fade.show.active{"aria-labelledby" => "pills-home-tab", :role => "tabpanel"}
+                  .main-about__box
+                    %p Nace como empresa hace 34 años que en sus inicios se dedica al reciclaje de textiles. Tiene presencia en su línea textil de forma ininterrumpida en los hogares de los chilenos. 
+                    %p Con el correr de los años, su mezcla de productos complementando la línea de textiles para el hogar, para crear las distintas divisiones dentro de la fábrica para muebles de madera, muebles de madera, colchones, marquesas y otros. Los productos Recutex cuentan con una excelente calidad en cada una de nuestras líneas.
+                #pills-profile.tab-pane.fade{"aria-labelledby" => "pills-profile-tab", :role => "tabpanel"}
+                  .main-about__boxsmall
+                    .main-about__boxitem
+                      .main-about__boxtitle
+                        %p Misión
+                      %p Nuestra misión es contribuir al desarrollo social y económico de todos y cada uno de nuestros negocios, esta contribución. 
+                    .main-about__boxitem
+                      .main-about__boxtitle
+                        %p Visión
+                      %p Recutex pretende ser la mejor compañía en prestar un buen servicio a todos nuestros clientes tanto comerciales como el cliente directo. Esto lo hemos logrado gracias al profesionalismo y la capacidad de cada uno de nuestros integrantes 
+                #pills-contact.tab-pane.fade{"aria-labelledby" => "pills-contact-tab", :role => "tabpanel"}
+                  .main-about__boxsmall
+                    .main-about__boxitem
+                      .main-about__boxtitle
+                        %p Compromiso
+                      %p Es nuestra base en cada uno de los productos que fabricamos. Cada uno de nuestros trabajadores sabe y se compromete a dar lo mejor de sí.
+                    .main-about__boxitem
+                      .main-about__boxtitle
+                        %p Actitud positiva
+                      %p Es nuestro valor referencial y principal rasgo de identidad, el cual lleva una solución rápida en cualquier adversidad que pueda presentar.
+
+    %section.main-contact
+      .container
+        .main-general__title
+          %p
+            Contáctanos
+        .main-contact__content
+          .main-footer__form
+            %form
+              .form-group
+                %input#formGroupExampleInput.form-control{:placeholder => "Nombre y apellido", :type => "text"}/
+              .form-group
+                %input#formGroupExampleInput2.form-control{:placeholder => "Correo", :type => "text"}/
+              .form-group
+                %input#formGroupExampleInput2.form-control{:placeholder => "Empresa", :type => "text"}/
+              .form-group
+                %input#formGroupExampleInput2.form-control{:placeholder => "Teléfono", :type => "phone"}/
+              .float-left.btn-box
+                %button.btn_custom.btn--medium.btn--filled
+                  Enviar
+          -# .main-footer__map
+          -#   #myTabContent.tab-content
+          -#     #home.tab-pane.fade.show.active{"aria-labelledby" => "home-tab", :role => "tabpanel"} 
+          -#       %iframe{:allowfullscreen => "", :frameborder => "0", :height => "250", :src => "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3112.3918530018527!2d-72.58276008499536!3d-38.731769294897305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9614d3c57765d41b%3A0xf2f838b30ffb3fc0!2sManuel%20Antonio%20Matta%20234%2C%20Temuco%2C%20Regi%C3%B3n%20de%20la%20Araucan%C3%ADa%2C%20Chile!5e0!3m2!1ses-419!2sve!4v1569689084747!5m2!1ses-419!2sve", :style => "border:0;", :width => "600"}
+
+          -#     #profile.tab-pane.fade{"aria-labelledby" => "profile-tab", :role => "tabpanel"}
+          -#       %iframe{:allowfullscreen => "", :frameborder => "0", :height => "250",  :src => "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3112.1883963180485!2d-72.58375328499523!3d-38.736438795170116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9614d3daf692831b%3A0x955a6ea4d192b0a2!2sLautaro%201401%2C%20Temuco%2C%20Regi%C3%B3n%20de%20la%20Araucan%C3%ADa%2C%20Chile!5e0!3m2!1ses-419!2sve!4v1569689513302!5m2!1ses-419!2sve", :style => "border:0;", :width => "600"}
+
+          -#     #contact.tab-pane.fade{"aria-labelledby" => "contact-tab", :role => "tabpanel"} 
+          -#       %iframe{:allowfullscreen => "", :frameborder => "0", :height => "250",  :src => "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51742.53500036418!2d-71.62266592308654!3d-35.85124864897271!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x966f6516aa560e4f%3A0x4937059779581ce8!2sLinares%2C%20Regi%C3%B3n%20del%20Maule%2C%20Chile!5e0!3m2!1ses-419!2sve!4v1569689602376!5m2!1ses-419!2sve", :style => "border:0;", :width => "600"}
+
+          -#   %ul#myTab.nav.nav-tabs{:role => "tablist"}
+          -#     %li.nav-item
+          -#       %a#home-tab.nav-link.active{"aria-controls" => "home", "aria-selected" => "true", "data-toggle" => "tab", :href => "#home", :role => "tab"} 
+          -#         Temuco -
+          -#         %span Manuel Matta N°234
+
+          -#     %li.nav-item
+          -#       %a#profile-tab.nav-link{"aria-controls" => "profile", "aria-selected" => "false", "data-toggle" => "tab", :href => "#profile", :role => "tab"} 
+          -#         Temuco -
+          -#         %span Lautaro N°1401
+          -#     %li.nav-item
+          -#       %a#contact-tab.nav-link{"aria-controls" => "contact", "aria-selected" => "false", "data-toggle" => "tab", :href => "#contact", :role => "tab"}
+          -#         Lina -
+          -#         %span Lautaro N°1401
+
+
+    %footer.main-footer
+      .main-footer__copy
+        %p
+          %a{:href =>"http://cmarketing.cl/"}
+            Contact Marketing | 
+          Todos los derechos Reservados
+
+    %script{src: "assets/js/jquery.min.js"}
+    %script{src: "assets/js/bootstrap.min.js"}
+    %script{src: "assets/js/slick.min.js"}
+    %script{src: "assets/js/setting-slick.js"}
+    %script{src: "assets/js/main.js"}
+
