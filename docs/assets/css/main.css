@@ -598,7 +598,7 @@ button:focus {
   color: #000;
   transition: 0.3s ease-in-out;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 18px;
   text-transform: capitalize;
   font-family: "Avenir Next LT Pro", sans-serif;
 }
