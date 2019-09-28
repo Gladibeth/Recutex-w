@@ -6,12 +6,61 @@ $breakpoints: ('xs': "(min-width: 0px) and (max-width: 767px)",
   'xl': "(min-width: 1601px) and (max-width: 2048px)",
 ) !default;
 
+
+@font-face {
+  font-family: 'Avenir Next LT Pro';
+  src: url('../fonts/AvenirNextLTPro-Demi.woff2') format('woff2'),
+    url('../fonts/AvenirNextLTPro-Demi.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir Next LT Pro';
+  src: url('../fonts/AvenirNextLTPro-Bold.woff2') format('woff2'),
+    url('../fonts/AvenirNextLTPro-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir Next LT Pro';
+  src: url('../fonts/AvenirNextLTPro-Regular.woff2') format('woff2'),
+    url('../fonts/AvenirNextLTPro-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir Next LT Pro';
+  src: url('../fonts/AvenirNextLTPro-BoldCn.woff2') format('woff2'),
+    url('../fonts/AvenirNextLTPro-BoldCn.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir Next LT Pro';
+  src: url('../fonts/AvenirNextLTPro-It.woff2') format('woff2'),
+    url('../fonts/AvenirNextLTPro-It.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Avenir Next LT Pro';
+  src: url('../fonts/AvenirNextLTPro-DemiCn.woff2') format('woff2'),
+    url('../fonts/AvenirNextLTPro-DemiCn.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 // Fonts
-$FiraSans: 'Fira Sans',
+$Avenir: 'Avenir Next LT Pro',
 sans-serif;
 
-$OpenSans: 'Open Sans',
-sans-serif;
+
 
 // General
 $white: #fff;

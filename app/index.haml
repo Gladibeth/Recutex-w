@@ -18,19 +18,18 @@
         .nav-top__header
           .nav-top__content.d-flex.pl-4.pr-4.justify-content-between
             .main-nav__contact
-              %a.mr-3{ href: '#', :target=> "_blank" }
+              %a.mr-3{ href: 'tel:Ventas: 2 27723227', :target=> "_blank" }
                 %i.fa.fa-phone 
                 %span 2 27723227
-              %a{ href: '#', :target=> "_blank" }
+              %a{ href: 'mailto:ventas@recutex.cl', :target=> "_blank" }
                 %i.fa.fa-envelope
                 %span ventas@recutex.cl
             .main-nav__redes
-              %a{ href: '#', :target=> "_blank" }
+              %a{ href: 'https://www.facebook.com/Recutex-Ltda-2293271020692328/', :target=> "_blank" }
                 %i.fa.fa-facebook 
-              %a{ href: '#', :target=> "_blank" }
-                %i.fa.fa-twitter
-              %a{ href: '#', :target=> "_blank" }
-                %i.fa.fa-linkedin
+              %a{ href: 'https://www.instagram.com/recutex/', :target=> "_blank" }
+                %i.fa.fa-instagram
+
         .content
           .main-brand
             %a.navbar-brand{:href => "#"}
@@ -42,15 +41,15 @@
           .navbar-collapse.offcanvas-collapse
             %ul.navbar-nav.mr-autos
               %li.nav-item.active
-                %a.nav-link.active{:href => "#home"} Camas
+                %a.nav-link.active{:href => "#product"} Camas
               %li.nav-item
-                %a.nav-link{:href => "#services"} Futones
+                %a.nav-link{:href => "#product"} Futones
               %li.nav-item
-                %a.nav-link{:href => "#about"} Comedores
+                %a.nav-link{:href => "#product"} Comedores
               %li.nav-item
-                %a.nav-link{:href => "#portfolio"} Camarotes
-              %li.nav-item
-                %a.nav-link{:href => "#team"} Gendarmeria / Sename
+                %a.nav-link{:href => "#product"} Camarotes
+              -# %li.nav-item
+              -#   %a.nav-link{:href => "#product"} Gendarmeria / Sename
           
       
     .main-banner
@@ -61,7 +60,7 @@
               .main-banner__title
                 %p Todo lo mejor lo encontramos en recutex
               .btn-box.btn-box__banner.float-right
-                %a.btn_custom.btn--medium.btn--filled{ :href=>"#contact"}
+                %a.btn_custom.btn--large.btn--filled{ :href=>"#contact"}
                   Contáctanos
               -# .main-banner__description
               -#   %p Fuerza de ventas remota 360.
@@ -70,13 +69,16 @@
         .main-banner__item
           .mask
             .main-banner__text
-              -# .main-banner__title
-              -#   %p Elige el servicio que mejor se adapte a tus objetivos
+              .main-banner__title
+                %p Nace como empresa hace 34 años que en sus inicios se dedica al reciclaje de textiles
+            .btn-box.btn-box__banner.float-right
+              %a.btn_custom.btn--large.btn--filled{ :href=>"#contact"}
+                Contáctanos
               -# .main-banner__description
               -#   %p Generación de reuniones con prospectos de clientes.
           .main-banner__img
             %img{ :src => "https://images.unsplash.com/photo-1503174971373-b1f69850bded?ixlib=rb-1.2.1&auto=format&fit=crop&w=787&q=80"}/
-    %section.main-product
+    %section.main-product#product
       .container
         .main-general__title
           %p
@@ -189,6 +191,7 @@
                       .main-about__boxtitle
                         %p Actitud positiva
                       %p Es nuestro valor referencial y principal rasgo de identidad, el cual lleva una solución rápida en cualquier adversidad que pueda presentar.
+        
 
     %section.main-contact#contact
       .container
@@ -209,6 +212,19 @@
               .float-left.btn-box
                 %button.btn_custom.btn--medium.btn--filled
                   Enviar
+    %section.main-partners
+      .container
+        .main-partners__content
+          .main-partners__item
+            .main-partners__img.main-partners__img--small
+              %img{ :src => "assets/img/gendermeria.png"}
+          .main-partners__item
+            .main-partners__img
+              %img{ :src => "assets/img/convenio.png"}
+          .main-partners__item
+            .main-partners__img.main-partners__img--small
+              %img{ :src => "assets/img/sename.png"}
+
           -# .main-footer__map
           -#   #myTabContent.tab-content
           -#     #home.tab-pane.fade.show.active{"aria-labelledby" => "home-tab", :role => "tabpanel"} 
