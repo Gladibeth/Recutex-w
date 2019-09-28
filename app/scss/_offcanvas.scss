@@ -104,14 +104,14 @@ body {
   margin-top: -2px;
 
   &.js-hamburger {
-    background-color: $contact;
+    background-color: $recutex2;
 
     &:before {
-      background-color: $contact;
+      background-color: $recutex2;
     }
 
     &::after {
-      background-color: $contact;
+      background-color: $recutex2;
     }
   }
 }
@@ -121,7 +121,7 @@ body {
 .hamburger-inner::after {
   width: 35px;
   height: 3px;
-  background-color: $white;
+  background-color: $recutex2;
   border-radius: 3px;
   position: absolute;
   transition-property: transform;

@@ -71,9 +71,9 @@
             .main-banner__text
               .main-banner__title
                 %p Nace como empresa hace 34 años que en sus inicios se dedica al reciclaje de textiles
-            .btn-box.btn-box__banner.float-right
-              %a.btn_custom.btn--large.btn--filled{ :href=>"#contact"}
-                Contáctanos
+              .btn-box.btn-box__banner.float-right
+                %a.btn_custom.btn--large.btn--filled{ :href=>"#contact"}
+                  Contáctanos
               -# .main-banner__description
               -#   %p Generación de reuniones con prospectos de clientes.
           .main-banner__img
@@ -205,10 +205,11 @@
                 %input#formGroupExampleInput.form-control{:placeholder => "Nombre y apellido", :type => "text"}/
               .form-group
                 %input#formGroupExampleInput2.form-control{:placeholder => "Correo", :type => "text"}/
-              .form-group
-                %input#formGroupExampleInput2.form-control{:placeholder => "Empresa", :type => "text"}/
+              -#   %input#formGroupExampleInput2.form-control{:placeholder => "Empresa", :type => "text"}/
               .form-group
                 %input#formGroupExampleInput2.form-control{:placeholder => "Teléfono", :type => "phone"}/
+              .form-group
+                %textarea{:placeholder => "Mensaje",:rows => "8"}
               .float-left.btn-box
                 %button.btn_custom.btn--medium.btn--filled
                   Enviar

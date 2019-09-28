@@ -221,6 +221,11 @@ button:focus {
 
       @include respond-to(xs) {
         width: 80%;
+        left: 10%;
+      }
+
+      @include respond-to(sm) {
+        top: 35%;
       }
 
       .main-banner__title {
@@ -299,6 +304,10 @@ button:focus {
     font-family: $Avenir;
     position: relative;
 
+    @include respond-to(xs) {
+      font-size: 40px;
+    }
+
     &:before {
       content: '';
       position: absolute;
@@ -316,6 +325,22 @@ button:focus {
 
 .main-about__box {
   margin-top: 30px;
+
+  @include respond-to(sm) {
+    margin-top: 0;
+  }
+}
+
+.main-about__img {
+  @include respond-to(xs) {
+    // width: 100px;
+
+  }
+
+  img {
+    width: 100%;
+
+  }
 }
 
 .main-about__boxsmall {
@@ -327,6 +352,10 @@ button:focus {
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
   margin-top: 50px;
+
+  @include respond-to(xs) {
+    grid-template-columns: 100%;
+  }
 }
 
 .nav-pills {
@@ -347,12 +376,50 @@ button:focus {
   border: 1px solid transparent;
   transition: 0.3s ease-in-out;
   padding: 10px 35px;
+
+  @include respond-to(md) {
+    padding: 10px;
+  }
+
+  @include respond-to(sm) {
+    padding: 10px;
+  }
+
+  @include respond-to(xs) {
+    padding: 10px;
+  }
 }
 
 .nav-pills .nav-link {
   padding: 10px 35px;
   background-color: transparent;
   border: 1px solid $recutex;
+
+  @include respond-to(md) {
+    padding: 10px;
+  }
+
+  @include respond-to(sm) {
+    padding: 10px;
+  }
+
+  @include respond-to(xs) {
+    padding: 10px;
+  }
+}
+
+.nav-pills .nav-item {
+  @include respond-to(md) {
+    padding: 10px;
+  }
+
+  @include respond-to(sm) {
+    padding: 10px;
+  }
+
+  @include respond-to(xs) {
+    padding: 5px;
+  }
 }
 
 .main-contact__content {
@@ -370,6 +437,10 @@ button:focus {
 .main-footer__form {
   width: 65%;
   margin-top: 50px;
+
+  @include respond-to(xs) {
+    width: 100%;
+  }
 }
 
 input[type="text"],
@@ -383,13 +454,13 @@ input[type="number"] {
   border-radius: 5px;
   outline: none;
   border: none;
-  background: #F6F7F9;
+  background: rgba(214, 218, 224, 0.52);
   color: #efc09c;
   font-size: 14px;
   // font-family: $CenturyGothic;
 
   &:focus {
-    background: rgba(223, 130, 57, 0.10);
+    background: rgba(217, 200, 192, 0.49);
     border-color: transparent !important;
     outline: 0;
     box-shadow: 0 0 0 0.2rem transparent !important;
@@ -412,13 +483,14 @@ textarea {
   border-radius: 5px;
   outline: none;
   border: none;
-  background: #F6F7F9;
+  background: rgba(214, 218, 224, 0.52);
   color: #efc09c;
   font-size: 14px;
-  // font-family: $CenturyGothic;
+  height: 100px;
+  resize: none;
 
   &:focus {
-    background: rgba(223, 130, 57, 0.10);
+    background: rgba(217, 200, 192, 0.49);
     border-color: transparent !important;
     outline: 0;
     box-shadow: 0 0 0 0.2rem transparent !important;
@@ -519,6 +591,14 @@ textarea {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 30px;
   margin-top: 50px;
+
+  @include respond-to(sm) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  @include respond-to(xs) {
+    grid-template-columns: 100%;
+  }
 }
 
 .main-product__item {
@@ -577,11 +657,19 @@ textarea {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
+
+  @include respond-to(xs) {
+    grid-template-columns: 100%;
+  }
 }
 
 .main-partners__item {
   display: flex;
   justify-content: center;
+
+  @include respond-to(xs) {
+    margin-bottom: 20px;
+  }
 }
 
 .main-partners__img {
