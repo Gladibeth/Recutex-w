@@ -842,7 +842,7 @@ button:focus {
 
 .main-about__boxtitle p {
   font-size: 16px;
-  font-weight: 600;
+  font-weight: normal;
 }
 
 .nav-pills .nav-link.active,
