@@ -61,8 +61,8 @@
               .main-banner__title
                 %p Todo lo mejor lo encontramos en recutex
               .btn-box.btn-box__banner.float-right
-                %button.btn_custom.btn--medium.btn--filled
-                  Enviar
+                %a.btn_custom.btn--medium.btn--filled{ :href=>"#contact"}
+                  Contáctanos
               -# .main-banner__description
               -#   %p Fuerza de ventas remota 360.
           .main-banner__img
@@ -190,7 +190,7 @@
                         %p Actitud positiva
                       %p Es nuestro valor referencial y principal rasgo de identidad, el cual lleva una solución rápida en cualquier adversidad que pueda presentar.
 
-    %section.main-contact
+    %section.main-contact#contact
       .container
         .main-general__title
           %p
