@@ -695,6 +695,20 @@ button:focus {
   color: #000;
 }
 
+.dropdown-menu {
+  padding: 15px;
+}
+
+.dropdown-menu li {
+  margin-bottom: 5px;
+}
+
+.dropdown-menu li a {
+  color: #000;
+  font-family: "Avenir Next LT Pro", sans-serif;
+  font-size: 16px;
+}
+
 /** Banner */
 .main-banner {
   position: relative;

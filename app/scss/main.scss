@@ -188,6 +188,20 @@ button:focus {
   }
 }
 
+.dropdown-menu {
+  padding: 15px;
+
+  li {
+    margin-bottom: 5px;
+
+    a {
+      color: $black;
+      font-family: $Avenir;
+      font-size: 16px;
+    }
+  }
+}
+
 /** Banner */
 .main-banner {
   position: relative;
