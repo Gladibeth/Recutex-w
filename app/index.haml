@@ -78,9 +78,10 @@
               -#   %p Generación de reuniones con prospectos de clientes.
           .main-banner__img
             %img{ :src => "https://images.unsplash.com/photo-1503174971373-b1f69850bded?ixlib=rb-1.2.1&auto=format&fit=crop&w=787&q=80"}/
+    
     %section.main-product#product
       .container
-        .main-general__title
+        .main-general__title.main-general__title--product
           %p
             Productos
         .main-product__content
@@ -91,7 +92,7 @@
               .main-product__title
                 %p Futones
               .main-product__price
-                %p $200
+                -# %p $200
           .main-product__item
             .main-product__img
               %img{ :src => "https://cdn.shopify.com/s/files/1/0015/9816/1008/collections/sofa1-05_large.png?v=1539033095"}/
@@ -99,7 +100,7 @@
               .main-product__title
                 %p Sofas
               .main-product__price
-                %p $200
+                -# %p $200
           .main-product__item
             .main-product__img
               %img{ :src => "https://cdn.shopify.com/s/files/1/0015/9816/1008/collections/mesaa-05_large.jpg?v=1539180688"}/
@@ -107,7 +108,7 @@
               .main-product__title
                 %p Comedores
               .main-product__price
-                %p $200
+                -# %p $200
           .main-product__item
             .main-product__img
               %img{ :src => "https://cdn.shopify.com/s/files/1/0015/9816/1008/collections/colchon-05_large.jpg?v=1539114534"}/
@@ -115,7 +116,7 @@
               .main-product__title
                 %p Colchones
               .main-product__price
-                %p $200
+                -# %p $200
           .main-product__item
             .main-product__img
               %img{ :src => "https://cdn.shopify.com/s/files/1/0015/9816/1008/collections/cama-05_large.png?v=1539033562"}/
@@ -123,7 +124,7 @@
               .main-product__title
                 %p Camas
               .main-product__price
-                %p $200
+                -# %p $200
           .main-product__item
             .main-product__img
               %img{ :src => "https://cdn.shopify.com/s/files/1/0015/9816/1008/collections/litera-05_large.jpg?v=1539110790"}/
@@ -131,7 +132,7 @@
               .main-product__title
                 %p Camarotes
               .main-product__price
-                %p $200
+                -# %p $200
           .main-product__item
             .main-product__img
               %img{ :src => "https://cdn.shopify.com/s/files/1/0015/9816/1008/collections/pouf-05_eee3acb4-4880-4029-b367-54c8488416a4_large.jpg?v=1539114046"}/
@@ -139,7 +140,7 @@
               .main-product__title
                 %p Poufs
               .main-product__price
-                %p $200
+                -# %p $200
           .main-product__item
             .main-product__img
               %img{ :src => "https://cdn.shopify.com/s/files/1/0015/9816/1008/collections/futon-05_large.jpg?v=1539113652"}/
@@ -147,7 +148,8 @@
               .main-product__title
                 %p Futones
               .main-product__price
-                %p $200
+                -# %p $200
+    
     %section.main-about
       .container
         .main-general__title
@@ -192,7 +194,13 @@
                         %p Actitud positiva
                       %p Es nuestro valor referencial y principal rasgo de identidad, el cual lleva una solución rápida en cualquier adversidad que pueda presentar.
         
-
+    %section.about-parallax
+      .overlay
+      .about-parallax__title
+        %h2 40 años de experiencia respaldan nuestra labor
+      .btn-box.btn-box__banner.btn-about__parallax
+        %a.btn_custom.btn--large.btn--filled{ :href=>"#contact"}
+          Contáctanos
     %section.main-contact#contact
       .container
         .main-general__title
