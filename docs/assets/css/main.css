@@ -707,6 +707,14 @@ button:focus {
   color: #000;
   font-family: "Avenir Next LT Pro", sans-serif;
   font-size: 16px;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+
+.dropdown-menu li a:hover {
+  text-decoration: none;
+  color: #d9c8c0;
+  transition: 0.3s ease-in-out;
 }
 
 /** Banner */
